@@ -21,3 +21,7 @@ In the following section there is a description of the content of each folder in
 ### JavaScriptBasics
 
 This folder contains very basic Javascripts files to practice simple scenario. No need to run servers or browser to test the code. Just node installed and a terminal.
+
+### 01-Basics
+
+This folder constains code to create a very basic node.js server. The is configured to run the server on http://localhost:3000. To quit the running Node.js server press `Ctrl + C` in the terminal. 
