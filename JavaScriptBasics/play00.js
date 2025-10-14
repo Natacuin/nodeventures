@@ -1,7 +1,9 @@
+//Javascript traditional way to define variables.
 var name='Nattanahel';
 var age= 40;
 var hasHbbies=true;
 
+//Javascript tradicional way to define functions.
 function summarizeUser(userName, userAge, userHasHobbies)
 {
     return(

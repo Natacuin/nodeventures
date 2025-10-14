@@ -1,3 +1,4 @@
+//Objects can have functions, but to avoid undefined results, instead of arroa fuction syntax just [functionName](arguments)
 const person ={
     name: 'Nattanahel',
     age: 40,
@@ -6,5 +7,3 @@ const person ={
     }
 };
 person.greet();
-console.log(person);
-console.log(person.greet());

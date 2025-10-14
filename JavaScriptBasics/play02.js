@@ -2,12 +2,12 @@ const name="Nattanahel";
 let age=40;
 const hasHbbies=true;
 
-//with function keyword
+//It is possible to assign a function to a variable
 const simpleFunction=function(userName,userAge){
     return 'The user ' + userName + ' is ' + userAge +' years old.';
 }
 
-//arrow funtion
+//Arrow funtion. No need to use the word 'function'
 const summarizeUser = (userName, userAge, userHasHobbies) => {
     return(
             'Name is ' + userName +
@@ -16,7 +16,10 @@ const summarizeUser = (userName, userAge, userHasHobbies) => {
         );
 };
 
+//Arrow functions with only one line doesn't need {}
 const smallAdd=(a,b) => a+b;
+
+//Arrow function with only one parameter doesn't need ()
 const addOne = a => a+1;
 
 console.log(simpleFunction(name,age));

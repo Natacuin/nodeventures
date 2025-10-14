@@ -1,9 +1,11 @@
-//use let and const instead of var
+//New way to define variables with let or constants with const instead of var
 const name='Nattanahel';
 let age= 40;
 const hasHbbies=true;
 
 //now we can change age, but not name or hasHobbies.
+//Next line will raise an error
+//hasHbbies=false;
 
 function summarizeUser(userName, userAge, userHasHobbies)
 {
@@ -16,6 +18,3 @@ function summarizeUser(userName, userAge, userHasHobbies)
 }
 
 console.log(summarizeUser(name,age,hasHbbies));
-
-//To run and test this program just type node .\play00.js 
-//be sure to open the terminal in the same folder of the file.
