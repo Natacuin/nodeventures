@@ -4,7 +4,7 @@ Learning Node.js by doing - this repo chronicles the process. This repo has some
 
 ![Node.js](https://img.shields.io/badge/Node.js-2b9348?style=for-the-badge&logo=Node.js&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-2b9348?style=for-the-badge&logo=javascript&logoColor=white)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
 
 ## REPL
 
