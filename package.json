@@ -2,10 +2,10 @@
   "name": "nodeventures",
   "version": "1.0.0",
   "description": "This project has some code samples from a node.js course",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./01-Basics/app08.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "homepage": "https://github.com/Natacuin/nodeventures#readme",
   "devDependencies": {
     "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
   }
 }

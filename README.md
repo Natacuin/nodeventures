@@ -3,6 +3,7 @@ Learning Node.js by doing - this repo chronicles the process. This repo has some
 
 
 ![Node.js](https://img.shields.io/badge/Node.js-2b9348?style=for-the-badge&logo=Node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-2b9348?style=for-the-badge&logo=javascript&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
 
@@ -51,3 +52,7 @@ This folder contains very basic Javascripts files to practice simple scenario. N
 ### 01-Basics
 
 This folder constains code to create a very basic node.js server. The is configured to run the server on http://localhost:3000. To quit the running Node.js server press `Ctrl + C` in the terminal. The sample codes shows how to do basic tasks like create responses based on the request information URL or METHOD.
+
+### 02-Express
+
+This folder constains code to create a node.js server using the express framework. The is configured to run the server on http://localhost:3000. To run individual programs just type `node [nameofthefile]` for example `node .\app01.js`, be sure to open the terminal in the same folder of the file. To quit the running Node.js server press `Ctrl + C` in the terminal.
