@@ -9,6 +9,7 @@ const utilDir=require('./util/path');
 
 const expressApp=express();
 
+expressApp.use(express.static(path.join(utilDir,'public')));
 expressApp.use(bodyParser.urlencoded());
 
 expressApp.use('/admin',adminRoutes);
