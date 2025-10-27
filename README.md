@@ -56,3 +56,7 @@ This folder constains code to create a very basic node.js server. The is configu
 ### 02-Express
 
 This folder constains code to create a node.js server using the express framework. The is configured to run the server on http://localhost:3000. To run individual programs just type `node [nameofthefile]` for example `node .\app01.js`, be sure to open the terminal in the same folder of the file. To quit the running Node.js server press `Ctrl + C` in the terminal.
+
+### 03-Express
+
+Similar to the 02-Express folder, but includes new features like routes, views, css. It is configured to run the server on http://localhost:3000. To run it type `node .\app.js`, be sure to open the terminal in the 03-Express folder. To quit the running Node.js server press `Ctrl + C` in the terminal.
