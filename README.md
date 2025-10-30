@@ -60,3 +60,13 @@ This folder constains code to create a node.js server using the express framewor
 ### 03-Express
 
 Similar to the 02-Express folder, but includes new features like routes, views, css. It is configured to run the server on http://localhost:3000. To run it type `node .\app.js`, be sure to open the terminal in the 03-Express folder. To quit the running Node.js server press `Ctrl + C` in the terminal.
+
+### 04-Express
+
+This folder includes templating engines, ejs, pug and handlebars. To install all of them at the same time use the command:
+
+```bash
+npm install -save ejs pug express-handlebars
+```
+
+This version of the project returns html dynamically to the browser. Some differences between the project in this folder and the previous ones is that there are files in the views folder with different extensions, like pug. The routes needs to call those files instead of the html versions, finally on the app.js the line `expressApp.set('view engine','pug')` is added to indicate to express which engine to use.

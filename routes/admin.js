@@ -5,15 +5,20 @@ const router=express.Router();
 
 const utilDir=require('../util/path');
 
+const products=[];
+
 router.get('/add-product',(req,res,next)=>{
     console.log('Add product middleware.');
     res.sendFile(path.join(utilDir,'views','add-product.html'))
 });
 
 router.post('/add-product',(req,res,next)=>{
-    console.log('product middleware.');
-    console.log(req.body);
+    console.log('Product name received:'+req.body);
+    console.log('Inserting product name in variable');
+    products.push({title:req.body.title});
+    console.log('Value of the variable'+products.toString());
     res.redirect('/')
 });
 
-module.exports =router;
+exports.routes= router;
+exports.products=products;
