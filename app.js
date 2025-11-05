@@ -18,7 +18,9 @@ expressApp.use(bodyParser.urlencoded());
 expressApp.use('/admin',adminRoutes.routes);
 expressApp.use(ShopRoutes);
 expressApp.use((req,res,next)=>{
-    res.status(404).sendFile(path.join(utilDir,'views','404.html'));
+    //Simple static html
+    //res.status(404).sendFile(path.join(utilDir,'views','404.html'));
+    res.render('404',{docTitle:"Page Not Found"});
 });
 
 expressApp.listen(3000);

@@ -9,13 +9,14 @@ const products=[];
 
 router.get('/add-product',(req,res,next)=>{
     console.log('Add product middleware.');
-    res.sendFile(path.join(utilDir,'views','add-product.html'))
+    res.render('add-product', {docTitle:'Add Product', path:true });
+    //res.sendFile(path.join(utilDir,'views','add-product.html'))
 });
 
 router.post('/add-product',(req,res,next)=>{
     console.log('Product name received:'+req.body);
     console.log('Inserting product name in variable');
-    products.push({title:req.body.title});
+    products.push({title:req.body.title,price:'$9.99', description:'Nice description'});
     console.log('Value of the variable'+products.toString());
     res.redirect('/')
 });
