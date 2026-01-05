@@ -70,3 +70,7 @@ npm install -save ejs pug express-handlebars
 ```
 
 This version of the project returns html dynamically to the browser. Some differences between the project in this folder and the previous ones is that there are files in the views folder with different extensions, like pug. The routes needs to call those files instead of the html versions, finally on the app.js the line `expressApp.set('view engine','pug')` is added to indicate to express which engine to use.
+
+### 05-Express
+
+This folder is similar to the 04-Express but the templating engine implemented is handlebars.
