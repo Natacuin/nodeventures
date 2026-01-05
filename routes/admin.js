@@ -9,7 +9,7 @@ const products=[];
 
 router.get('/add-product',(req,res,next)=>{
     console.log('Add product middleware.');
-    res.render('add-product', {docTitle:'Add Product', path:'/add-product' });
+    res.render('add-product', {docTitle:'Add Product', path:'/add-product', activeAddProduct:true });
     //res.sendFile(path.join(utilDir,'views','add-product.html'))
 });
 

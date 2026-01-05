@@ -73,4 +73,12 @@ This version of the project returns html dynamically to the browser. Some differ
 
 ### 05-Express
 
-This folder is similar to the 04-Express but the templating engine implemented is handlebars.
+This folder is similar to the 04-Express but the templating engine implemented is handlebars, for handlebars there is an additional step on the `app.js` file, which is to use a require statement.
+
+```javascript
+const expresshandlebars = require('express-handlebars');
+
+expressApp.engine('handlebars',expresshandlebars.create());
+expressApp.set('view engine','handlebars')
+
+```

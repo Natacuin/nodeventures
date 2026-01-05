@@ -4,19 +4,28 @@ const express = require('express');
 const bodyParser= require('body-parser');
 
 const adminRoutes= require('./routes/admin');
-const ShopRoutes= require('./routes/shop');
+const shopRoutes= require('./routes/shop');
 const utilDir=require('./util/path');
 
 const expressApp=express();
-//Setting the engine to use Pug in this case.
-expressApp.set('view engine','pug')
+const expressHbs = require('express-handlebars');
+
+// Register the engine
+expressApp.engine('hbs', expressHbs({
+    layoutsDir:'views/layouts/',
+    defaultLayout: 'main-layout',
+    extname:'hbs'
+}));
+
+
+expressApp.set('view engine','hbs')
 
 
 expressApp.use(express.static(path.join(utilDir,'public')));
 expressApp.use(bodyParser.urlencoded());
 
 expressApp.use('/admin',adminRoutes.routes);
-expressApp.use(ShopRoutes);
+expressApp.use(shopRoutes);
 expressApp.use((req,res,next)=>{
     //Simple static html
     //res.status(404).sendFile(path.join(utilDir,'views','404.html'));

@@ -11,7 +11,7 @@ router.get('/',(req,res,next)=>{
     
     const products=adminData.products;
     //To render dynamic content (pub)
-    res.render('shop', {prods:products, docTitle:'Shop', path:'/shop'});
+    res.render('shop', {prods:products, docTitle:'Shop', path:'/shop', hasProducts:products.length>0, activeShop:true});
     //To render static HTML files
     //res.sendFile(path.join(utilDir,'views','shop.html'));
 });
