@@ -18,7 +18,7 @@ expressApp.engine('hbs', expressHbs({
 }));
 
 
-expressApp.set('view engine','ejs')
+expressApp.set('view engine','hbs')
 
 
 expressApp.use(express.static(path.join(utilDir,'public')));
