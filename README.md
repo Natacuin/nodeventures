@@ -89,9 +89,13 @@ expressApp.set('view engine','hbs')
 
 ### 06-Express
 
-This folder is similar to the 04-Express and 05-Express but the templating engine implemented is EJS, 
+This folder is similar to the 04-Express and 05-Express but the templating engine implemented is EJS.
 
 ```javascript
 expressApp.set('view engine','ejs')
 
 ```
+
+### 07-Express
+
+This folder introduce the MVC pattern in the project. Starting with a new folder called controllers.
