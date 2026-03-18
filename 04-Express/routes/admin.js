@@ -17,7 +17,7 @@ router.post('/add-product',(req,res,next)=>{
     console.log('Product name received:'+req.body);
     console.log('Inserting product name in variable');
     products.push({title:req.body.title,price:'$9.99', description:'Nice description'});
-    console.log('Value of the variable'+products.toString());
+    //console.log('Value of the variable'+products.toString());
     res.redirect('/')
 });
 

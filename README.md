@@ -98,4 +98,4 @@ expressApp.set('view engine','ejs')
 
 ### 07-Express
 
-This folder introduce the MVC pattern in the project. Starting with a new folder called controllers.
+This folder introduce the MVC pattern in the project. Starting with a new folder called controllers, but models too. Now the model (products) is stored on physical files.
